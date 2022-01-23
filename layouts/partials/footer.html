@@ -1,10 +1,19 @@
 <footer>
-    <div>
-      <p class="f6 black mt6 lh-copy">
-        {{ .Site.Copyright  | safeHTML }}
-      </p>
-    </div>
-  </footer>
+  <div>
+    <p class="f6 black mt6 lh-copy">
+      {{ .Site.Copyright  | safeHTML }}
+    </p>
+  </div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1VF7Q4YJT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z1VF7Q4YJT', {'anonymize_ip': true, });
+</script>
   
-  {{ partial "scripts.html" . }}
+{{ partial "scripts.html" . }}
 
